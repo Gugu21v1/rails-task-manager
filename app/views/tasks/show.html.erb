@@ -1,0 +1,16 @@
+<div class="container center column titles">
+  Title: <%= @task.title %>
+  <br>
+  Details: <%= @task.details %>
+  <br>
+  Completed: <%= @task.completed %>
+</div>
+<br>
+
+<div class="container center column titles">
+  <%= link_to "Edit", edit_task_path(@task) %>
+  <%= link_to "Back", tasks_path %>
+  <%= link_to task_path(@task), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
+    <i class="fa-solid fa-trash red"></i></li>
+  <% end %>
+</div>
