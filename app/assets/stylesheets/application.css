@@ -44,6 +44,14 @@ a {
   margin: 5px auto;
 }
 
+s a {
+  color: greenyellow;
+}
+
+.orange a {
+  color: orange;
+}
+
 .titles {
   margin: 40px auto;
   font-size: 2em;
